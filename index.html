@@ -9,7 +9,7 @@
     --surface:#E4EDE8; --card:#FFFFFF; --card-head:#EEF5F0;
     --ink:#2B2822; --ink-soft:#736F67; --line:#CFDDD4;
     --yolk:#E09A2B; --yolk-deep:#B87814; --yolk-tint:#FDF6E7;
-    --sehat:#3E7C5A; --bahaya:#BC4A34; --wa:#25A366;
+    --sehat:#3E7C5A; --bahaya:#BC4A34;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   body{
@@ -17,12 +17,10 @@
     background:var(--surface); color:var(--ink);
     font-variant-numeric:tabular-nums; line-height:1.45; -webkit-text-size-adjust:100%;
   }
-  .wrap{max-width:660px;margin:0 auto;padding:0 14px 96px}
-
+  .wrap{max-width:660px;margin:0 auto;padding:0 14px 92px}
   header{padding:22px 2px 10px}
   header h1{font-size:20px;font-weight:800;letter-spacing:-.01em}
   header p{color:var(--ink-soft);font-size:13px;margin-top:2px}
-
   .hero{
     position:sticky;top:0;z-index:20;background:var(--ink);color:#fff;border-radius:14px;
     display:grid;grid-template-columns:1fr 1fr;gap:1px;overflow:hidden;margin:8px 0 18px;
@@ -32,13 +30,11 @@
   .hero .lbl{font-size:11px;color:#B9C4BC;letter-spacing:.02em}
   .hero .val{font-size:26px;font-weight:800;color:var(--yolk);margin-top:2px;line-height:1.1}
   .hero .sub{font-size:11px;color:#9AA69D;margin-top:1px}
-
   section{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:14px;overflow:hidden}
   .head{background:var(--card-head);padding:11px 16px;border-bottom:1px solid var(--line)}
   .head h2{font-size:14px;font-weight:700;display:inline}
   .head span{font-size:12px;color:var(--ink-soft);font-weight:400;margin-left:6px}
   .body{padding:6px 16px 14px}
-
   .row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid #EEF2EF}
   .row:last-child{border-bottom:none}
   .row label{font-size:14px;flex:1}
@@ -55,7 +51,6 @@
   input:focus{outline:none;border-color:var(--yolk);box-shadow:0 0 0 3px rgba(224,154,43,.22)}
   input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
   input[type=number]{-moz-appearance:textfield}
-
   .out{display:flex;justify-content:space-between;align-items:baseline;padding:7px 0;border-bottom:1px solid #EEF2EF}
   .out:last-child{border-bottom:none}
   .out .k{font-size:14px}
@@ -64,7 +59,6 @@
   .out.big .k{font-weight:700}
   .out.big .v{font-size:22px;font-weight:800;color:var(--yolk-deep)}
   .accent .v{color:var(--yolk-deep)}
-
   table{width:100%;border-collapse:collapse;font-size:13px;margin-top:4px}
   th,td{padding:8px 4px;text-align:right;border-bottom:1px solid #EEF2EF}
   th:first-child,td:first-child{text-align:left}
@@ -76,39 +70,28 @@
   td .mini:focus{outline:none;border-color:var(--yolk);box-shadow:0 0 0 3px rgba(224,154,43,.22)}
   .pos{color:var(--sehat)} .neg{color:var(--bahaya)}
   .totalrow td{border-top:2px solid var(--line);border-bottom:none;font-weight:800;padding-top:10px}
-
   .mixchk{font-size:12px;font-weight:700;padding:3px 9px;border-radius:20px;display:inline-block}
   .mixok{background:#E3F0E8;color:var(--sehat)} .mixbad{background:#F6E1DC;color:var(--bahaya)}
-
   .split{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
   .split .who{background:var(--card-head);border:1px solid var(--line);border-radius:11px;padding:12px}
   .split .who h3{font-size:12px;color:var(--ink-soft);font-weight:600}
   .split .who .amt{font-size:20px;font-weight:800;margin-top:3px}
   .split .who .note{font-size:11px;color:var(--ink-soft);margin-top:2px}
-
   .status{display:flex;align-items:center;gap:12px;padding:4px 0}
   .badge{font-size:14px;font-weight:800;padding:8px 16px;border-radius:10px;white-space:nowrap}
   .b-sehat{background:#E3F0E8;color:var(--sehat)} .b-bahaya{background:#F6E1DC;color:var(--bahaya)}
   .status .msg{font-size:12.5px;color:var(--ink-soft)}
-
   .foot{text-align:center;color:var(--ink-soft);font-size:11px;margin-top:16px;line-height:1.5}
-
   .actionbar{
-    position:fixed;left:0;right:0;bottom:0;z-index:30;
-    background:rgba(255,255,255,.92);backdrop-filter:blur(8px);
-    border-top:1px solid var(--line);padding:10px 14px;
-    display:flex;gap:10px;max-width:660px;margin:0 auto;
+    position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);
+    border-top:1px solid var(--line);padding:10px 14px;display:flex;gap:10px;max-width:660px;margin:0 auto;
   }
   .btn{flex:1;border:none;border-radius:11px;padding:13px;font:inherit;font-size:14px;font-weight:700;
-    cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px}
-  .btn-wa{background:var(--wa);color:#fff}
-  .btn-pdf{background:#fff;color:var(--ink);border:1.5px solid var(--line)}
+    cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;background:var(--ink);color:#fff}
   .btn:active{transform:translateY(1px)}
   .btn svg{width:17px;height:17px}
-
   @media (max-width:420px){ .hero .val{font-size:22px} input[type=number]{width:96px} }
   @media (prefers-reduced-motion:reduce){*{transition:none!important}}
-
   @media print{
     body{background:#fff}
     .actionbar,.hint,header p{display:none}
@@ -133,7 +116,6 @@
     <div><div class="lbl">Laba bersih / bulan</div><div class="val" id="h_laba">–</div><div class="sub">setelah semua biaya</div></div>
   </div>
 
-  <!-- BAHAN -->
   <section>
     <div class="head"><h2>Bahan &amp; ongkos</h2></div>
     <div class="body">
@@ -154,7 +136,6 @@
     </div>
   </section>
 
-  <!-- KEMASAN -->
   <section>
     <div class="head"><h2>Kemasan</h2><span>harga beli per 50</span></div>
     <div class="body">
@@ -171,7 +152,6 @@
     </div>
   </section>
 
-  <!-- HARGA JUAL -->
   <section>
     <div class="head"><h2>Harga jual &amp; margin</h2><span>paket diisi per paket</span></div>
     <div class="body">
@@ -179,23 +159,18 @@
         <thead><tr><th>Channel</th><th>Harga jual</th><th>Laba</th><th>Margin</th></tr></thead>
         <tbody>
           <tr><td class="name">Grosir<small>per pcs</small></td>
-            <td><input class="mini" type="number" id="jGrosir" value="3500"></td>
-            <td id="lGrosir">–</td><td id="mGrosir">–</td></tr>
+            <td><input class="mini" type="number" id="jGrosir" value="3500"></td><td id="lGrosir">–</td><td id="mGrosir">–</td></tr>
           <tr><td class="name">Paket 4<small>per paket (isi 4)</small></td>
-            <td><input class="mini" type="number" id="jPaket4" value="18000"></td>
-            <td id="lPaket4">–</td><td id="mPaket4">–</td></tr>
+            <td><input class="mini" type="number" id="jPaket4" value="18000"></td><td id="lPaket4">–</td><td id="mPaket4">–</td></tr>
           <tr><td class="name">Paket 10<small>per paket (isi 10)</small></td>
-            <td><input class="mini" type="number" id="jPaket10" value="42000"></td>
-            <td id="lPaket10">–</td><td id="mPaket10">–</td></tr>
+            <td><input class="mini" type="number" id="jPaket10" value="42000"></td><td id="lPaket10">–</td><td id="mPaket10">–</td></tr>
           <tr><td class="name">Satuan<small>per pcs</small></td>
-            <td><input class="mini" type="number" id="jSatuan" value="5000"></td>
-            <td id="lSatuan">–</td><td id="mSatuan">–</td></tr>
+            <td><input class="mini" type="number" id="jSatuan" value="5000"></td><td id="lSatuan">–</td><td id="mSatuan">–</td></tr>
         </tbody>
       </table>
     </div>
   </section>
 
-  <!-- VOLUME -->
   <section>
     <div class="head"><h2>Volume &amp; sebaran channel</h2></div>
     <div class="body">
@@ -214,7 +189,6 @@
     </div>
   </section>
 
-  <!-- LABA RUGI -->
   <section>
     <div class="head"><h2>Laba-rugi bulanan</h2></div>
     <div class="body">
@@ -226,7 +200,9 @@
       <div style="margin-top:14px;font-size:13px;font-weight:700;color:var(--ink-soft)">Biaya operasional / bulan</div>
       <div class="row"><label>Gaji adek (produksi)</label><div class="ctrl"><span class="pre">Rp</span><input type="number" id="gajiAdek" value="2500000"></div></div>
       <div class="row"><label>Gaji helper produksi</label><div class="ctrl"><span class="pre">Rp</span><input type="number" id="helper" value="1800000"></div></div>
-      <div class="row"><label>Tim canvasing (gaji+bensin)</label><div class="ctrl"><span class="pre">Rp</span><input type="number" id="canvasing" value="5000000"></div></div>
+      <div class="row"><label>Tim canvasing grosir<small class="hint">gaji + bensin, buat masuk warung</small></label><div class="ctrl"><span class="pre">Rp</span><input type="number" id="canvasing" value="5000000"></div></div>
+      <div class="row"><label>Tim ecer mangkal<small class="hint">gaji 4 org jaga lapak</small></label><div class="ctrl"><span class="pre">Rp</span><input type="number" id="ecerTeam" value="6000000"></div></div>
+      <div class="row"><label>Iklan / endorse<small class="hint">arahin traffic ke lapak ecer</small></label><div class="ctrl"><span class="pre">Rp</span><input type="number" id="iklan" value="3000000"></div></div>
       <div class="row"><label>Fee marketing (kamu)</label><div class="ctrl"><span class="pre">Rp</span><input type="number" id="feeMkt" value="3000000"></div></div>
       <div class="row"><label>Operasional lain</label><div class="ctrl"><span class="pre">Rp</span><input type="number" id="lain" value="1000000"></div></div>
       <div class="out" style="margin-top:6px"><span class="k">Laba kotor total</span><span class="v" id="oKotor">–</span></div>
@@ -235,12 +211,11 @@
     </div>
   </section>
 
-  <!-- MODAL -->
   <section>
     <div class="head"><h2>Modal &amp; bagi hasil</h2></div>
     <div class="body">
-      <div class="row"><label>Modal awal (dari kamu)</label><div class="ctrl"><span class="pre">Rp</span><input type="number" id="modal" value="20000000"></div></div>
-      <div class="row"><label>Laba buat cicil modal<small class="hint">sisanya langsung dibagi</small></label>
+      <div class="row"><label>Modal awal (dari kamu)<small class="hint">termasuk meja portabel + banner + stok awal</small></label><div class="ctrl"><span class="pre">Rp</span><input type="number" id="modal" value="20000000"></div></div>
+      <div class="row"><label>Laba buat cicil modal<small class="hint">kalau modal sudah balik, isi 0 → semua laba dibagi</small></label>
         <div class="ctrl"><input type="number" id="pCicil" value="70" class="sm"><span class="suf">%</span></div></div>
       <div class="out"><span class="k">Cicilan modal / bulan</span><span class="v" id="oCicil">–</span></div>
       <div class="out accent"><span class="k">Estimasi modal balik</span><span class="v" id="oBalik">–</span></div>
@@ -253,7 +228,6 @@
     </div>
   </section>
 
-  <!-- CANVASING -->
   <section>
     <div class="head"><h2>Cek kesehatan canvasing</h2></div>
     <div class="body">
@@ -265,18 +239,14 @@
 
   <div class="foot">
     Semua hitungan jalan di HP kamu, tidak ada data yang dikirim ke mana-mana.<br>
-    Laba masih asumsi — akurat kalau gaji, biaya canvasing &amp; modal diisi angka real.
+    Laba masih asumsi — akurat kalau gaji, tim, iklan &amp; modal diisi angka real.
   </div>
 </div>
 
 <div class="actionbar">
-  <button class="btn btn-pdf" onclick="window.print()">
+  <button class="btn" onclick="window.print()">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v8H6z"/></svg>
     Simpan PDF
-  </button>
-  <button class="btn btn-wa" id="waBtn">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.8-.9-2.08-1-.28-.1-.48-.15-.68.15s-.78 1-.96 1.2c-.18.2-.35.22-.65.08-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.18-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.68-1.63-.93-2.24-.24-.58-.5-.5-.68-.5h-.58c-.2 0-.53.07-.8.38-.28.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.1 3.2 5.08 4.5.7.3 1.26.48 1.7.62.7.22 1.35.2 1.86.12.57-.08 1.75-.72 2-1.4.25-.7.25-1.28.17-1.4-.07-.13-.27-.2-.57-.35zM12 2a10 10 0 00-8.5 15.3L2 22l4.8-1.5A10 10 0 1012 2z"/></svg>
-    Kirim ke WhatsApp
   </button>
 </div>
 
@@ -285,13 +255,12 @@
   const num = id => { const v = parseFloat($(id).value); return isNaN(v) ? 0 : v; };
   const rp = n => 'Rp ' + Math.round(n).toLocaleString('id-ID');
   const pct = n => n.toLocaleString('id-ID',{maximumFractionDigits:1}) + '%';
-  let R = {};
 
   const CH = [
-    {k:'Grosir', name:'Grosir', unit:'pcs', qty:1,  kem:()=>num('kgrosir')},
-    {k:'Paket4', name:'Paket 4', unit:'paket', qty:4,  kem:()=>num('mika4')/50 + num('label')},
-    {k:'Paket10',name:'Paket 10',unit:'paket', qty:10, kem:()=>num('mika10')/50 + num('label')},
-    {k:'Satuan', name:'Satuan', unit:'pcs', qty:1,  kem:()=>num('ksatuan')},
+    {k:'Grosir', name:'Grosir', qty:1,  kem:()=>num('kgrosir')},
+    {k:'Paket4', name:'Paket 4', qty:4,  kem:()=>num('mika4')/50 + num('label')},
+    {k:'Paket10',name:'Paket 10',qty:10, kem:()=>num('mika10')/50 + num('label')},
+    {k:'Satuan', name:'Satuan', qty:1,  kem:()=>num('ksatuan')},
   ];
 
   function calc(){
@@ -303,8 +272,7 @@
     const jualPcs={}, labaPcs={};
     CH.forEach(c=>{
       const j = num('j'+c.k);
-      const hppUnit = hppReal*c.qty + c.kem();
-      const labaUnit = j - hppUnit;
+      const labaUnit = j - (hppReal*c.qty + c.kem());
       jualPcs[c.k] = j/c.qty; labaPcs[c.k] = labaUnit/c.qty;
       $('l'+c.k).textContent = rp(labaUnit);
       $('l'+c.k).className = labaUnit>=0?'pos':'neg';
@@ -333,7 +301,7 @@
     $('plOmzet').textContent = rp(to);
     $('plKotor').textContent = rp(tk);
 
-    const biaya = num('gajiAdek')+num('helper')+num('canvasing')+num('feeMkt')+num('lain');
+    const biaya = num('gajiAdek')+num('helper')+num('canvasing')+num('ecerTeam')+num('iklan')+num('feeMkt')+num('lain');
     const bersih = tk - biaya;
     $('oKotor').textContent = rp(tk);
     $('oBiaya').textContent = rp(biaya);
@@ -356,33 +324,14 @@
     $('cvPerPcs').textContent = pcsGrosir>0 ? rp(cvPerPcs) : '–';
     $('cvMargin').textContent = rp(labaPcs.Grosir);
     const badge=$('cvBadge'), msg=$('cvMsg');
-    let cvStat='–';
     if(pcsGrosir<=0){ badge.textContent='–'; badge.className='badge'; msg.textContent='Isi porsi grosir dulu.'; }
-    else if(cvPerPcs < labaPcs.Grosir){ cvStat='SEHAT'; badge.textContent='SEHAT'; badge.className='badge b-sehat'; msg.textContent='Biaya canvasing masih di bawah margin grosir.'; }
-    else { cvStat='BAHAYA'; badge.textContent='BAHAYA'; badge.className='badge b-bahaya'; msg.textContent='Canvasing lebih mahal dari margin grosir — naikkan volume atau harga.'; }
+    else if(cvPerPcs < labaPcs.Grosir){ badge.textContent='SEHAT'; badge.className='badge b-sehat'; msg.textContent='Biaya canvasing masih di bawah margin grosir.'; }
+    else { badge.textContent='BAHAYA'; badge.className='badge b-bahaya'; msg.textContent='Canvasing lebih mahal dari margin grosir — naikkan volume atau harga.'; }
 
     $('h_hpp').textContent = rp(hppReal);
     $('h_laba').textContent = rp(bersih);
     $('h_laba').style.color = bersih>=0 ? 'var(--yolk)' : '#E88B76';
-
-    R = { hppReal, bersih, balikBln, kamu, adek, cvStat, omzet:to };
   }
-
-  $('waBtn').addEventListener('click', ()=>{
-    const t =
-`*Hitungan Telur Asin*
-
-HPP/pcs: ${rp(R.hppReal)}
-Omzet/bln: ${rp(R.omzet)}
-Laba bersih/bln: ${rp(R.bersih)}
-Modal balik: ${R.balikBln>0 ? R.balikBln.toLocaleString('id-ID',{maximumFractionDigits:1})+' bulan' : '-'}
-
-Kantong kamu: ${rp(R.kamu)}
-Kantong adek: ${rp(R.adek)}
-
-Status canvasing: ${R.cvStat}`;
-    window.open('https://wa.me/?text=' + encodeURIComponent(t), '_blank');
-  });
 
   document.querySelectorAll('input').forEach(el=>el.addEventListener('input', calc));
   calc();
